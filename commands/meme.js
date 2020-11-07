@@ -6,7 +6,9 @@ module.exports = {
 	name: 'meme',
 	description: 'Random programming jokes!',
 	execute(message, args) {
-
+        if(args[0] == 'desi'){
+            args = 'DankMeme'
+        }
         let options = {
             url: 'https://meme-api.herokuapp.com/gimme/'+args,
             method: 'GET'
