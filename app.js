@@ -34,6 +34,8 @@ client.on('message', message=>{
         client.commands.get(command).execute(message,args);
     }else if(command == 'p'){
         client.commands.get(command).execute(message,args);
+    }else if(command == 'help'){
+        client.commands.get(command).execute(message,args);
     }
 });
 
