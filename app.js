@@ -24,9 +24,6 @@ client.on('message', message=>{
         client.commands.get(command).execute(message);
     }else if(command == 'joke'){
         client.commands.get(command).execute(message,args);
-    }else if(command == 'audio'){
-        // client.commands.get(command).execute(message);
-        client.commands.get(command).execute(message);
     }else if(command == 'meme'){
         client.commands.get(command).execute(message,args);
     }else if(command == 'quote'){
@@ -34,6 +31,8 @@ client.on('message', message=>{
     }else if(command == 'stop'){
         client.commands.get(command).execute(message);
     }else if(command == 'play'){
+        client.commands.get(command).execute(message,args);
+    }else if(command == 'p'){
         client.commands.get(command).execute(message,args);
     }
 });
