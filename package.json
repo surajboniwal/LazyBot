@@ -10,7 +10,13 @@
   "author": "NightGang!",
   "license": "ISC",
   "dependencies": {
+    "@discordjs/opus": "^0.3.3",
     "discord.js": "^12.4.1",
-    "nodemon": "^2.0.6"
+    "ffmpeg": "0.0.4",
+    "ffmpeg-static": "^4.2.7",
+    "fluent-ffmpeg": "^2.1.2",
+    "nodemon": "^2.0.6",
+    "request": "^2.88.2",
+    "ytdl-core": "^4.0.3"
   }
 }
