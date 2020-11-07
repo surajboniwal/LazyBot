@@ -41,7 +41,7 @@ async function play(voiceChannel, videoUrl) {
     url: songInfo.videoDetails.video_url,
   };
   const connection = await voiceChannel.join();
-  const dispatcher = connection.play(ytdl(song.url));
+  const dispatcher = connection.play(ytdl(song.url, {filter: 'audioonly'}));
 
   dispatcher.on("start", () => {});
 }
