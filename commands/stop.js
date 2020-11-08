@@ -10,6 +10,9 @@ module.exports = {
 };
 
 async function stop(voiceChannel) {
-	const connection = await voiceChannel.join();
-	connection.disconnect();
+	if(voiceChannel != null){
+		const connection = await voiceChannel.join();
+		connection.disconnect();
+	}
+	
 }
